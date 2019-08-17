@@ -7,11 +7,11 @@
       <h3 class="">Quotes for the Day:</h3>
       <div class="list-group">
         <ul>
-          <!-- <div class="list-group-item" *ngFor='let goal of goals; let i = index'>
-            <li>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</li>
+          <div class="list-group-item" *ngFor='let Quotes of myquotes; let i = index'>
+            <li> {{Quotes.name }} due on {{Quotes.completeDate|date|uppercase}}</li>
             <button class="btn btn-outline-info" (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-goal-detail *ngIf='goal.showDescription' [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
-          </div> -->
+            <app-quote-detail></app-quote-detail>
+          </div>
         </ul>
       </div>
     </div>
