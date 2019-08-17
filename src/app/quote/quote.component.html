@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <h1 class="jumbotron bg-info text-white text-center">
-    <i class="fas fa-quote-left"></i> Welcome to Quotes! <i class="fas fa-quote-right"></i>
+    <i class="fas fa-quote-left"></i><strong> Welcome to Ranking Quotes! </strong> <i class="fas fa-quote-right"></i>
   </h1>
   <div class="row">
     <div class="col-md-6">
@@ -8,16 +8,19 @@
       <div class="list-group">
         <ul>
           <div class="list-group-item" *ngFor='let Quotes of myquotes; let i = index'>
-            <li> {{Quotes.name }} due on {{Quotes.completeDate|date|uppercase}}</li>
-            <button class="btn btn-outline-info" (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail></app-quote-detail>
+            <h5>{{Quotes.name }}
+            </h5>
+            <p><i (click)="Quotes.upvote=Quotes.upvote+1" class="fas fa-thumbs-up text-primary voting upvote"></i>{{Quotes.upvote}}
+          <i (click)="Quotes.downvote=Quotes.downvote+1" class="fas fa-thumbs-down text-danger voting downvote"></i>{{Quotes.downvote}}</p>
+            <button class="btn-outline-info" (click)='toggleDetails(i)'>Toggle Details</button><br>
+            <app-quote-detail *ngIf='Quotes.showDescription' [myquotes]='Quotes' (isComplete) = 'deleteQuotes($event,i)'></app-quote-detail>
           </div>
         </ul>
       </div>
     </div>
 
     <div class="col-md-6">
-    <app-quote-form></app-quote-form>
+    <app-quote-form (addQuotes)="addNewQuotes($event)"></app-quote-form>
     </div>
 
   </div>

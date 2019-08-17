@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.voting {
+  font-size:28px;
+  /* margin-right: 50px;
+  margin-left: 50px; */
+  padding: 10px;
+}
+.downvote{
+  margin-left: 20px;
+}
+.upvote {
+  margin-left: 10px;
+}

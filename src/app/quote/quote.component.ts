@@ -8,19 +8,19 @@ import { Quotes } from '../quotes';
 })
 export class QuoteComponent implements OnInit {
   myquotes: Quotes[] = [
-  new Quotes(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2019,3,14)),
-  new Quotes(2,'Buy Cookies','I have to buy cookies for the parrot',new Date(2019,9,9)),
-  new Quotes(3,'Get new Phone Case','Diana has her birthday coming up soon',new Date(2019,9,12)),
-  new Quotes(4,'Get Dog Food','Pupper likes expensive snacks',new Date(2019,9,18)),
-  new Quotes(5,'Solve math homework','Damn Math',new Date(2019,2,14)),
-  new Quotes(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2019,3,14)),
+  new Quotes(1, 'Find an online version and watch merlin find his son', 'Watch finding Nemo', new Date(2019,6,17)),
+  new Quotes(2, 'I have to buy cookies for the parrot', 'Buy Cookies',new Date(2019,6,17)),
+  new Quotes(3, 'Diana has her birthday coming up soon', 'Get new Phone Case', new Date(2019,6,17)),
+  new Quotes(4, 'Pupper likes expensive snacks', 'Get Dog Food', new Date(2019,6,18)),
+  new Quotes(5,'Solve math homework','Damn Math',new Date(2019,7,18)),
+  new Quotes(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2019,7,18)),
 ];
 
-addNewQuotes(myquotes){
+addNewQuotes(Quotes){
     let myquotesLength = this.myquotes.length;
-    myquotes.id = myquotesLength+1;
-    myquotes.completeDate = new Date(myquotes.completeDate)
-    this.myquotes.push(myquotes)
+    Quotes.id = myquotesLength+1;
+    Quotes.completeDate = new Date(Quotes.completeDate)
+    this.myquotes.push(Quotes)
   }
 
   toggleDetails(index){
