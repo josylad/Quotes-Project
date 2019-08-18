@@ -1,10 +1,16 @@
-# Quotes
+# Quotes App
+#### Quotes Publishing and Voting website, 17/08/2019
+## Description
+This project is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. This application is built with Angular.
+## Screenshot
+<img src="/myquote.png" width="1000">
 
-This project is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
-
-
+## Deployment/Demo
+https://josylad.github.io/Quotes-Project/
 
 ## Development server
+
+This application built with Angular, so you need to have a knowledge of how Angular works and have Angular installed on your machine.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -27,3 +33,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Known Bugs
+No known bugs at the moment.
+## Author
+Joseph Adediji  
+https://twitter.com/josylad
+
+## Technologies used
+* HTML
+* CSS
+* Angular
+* Bootstrap
+* Angular CLI
+## License
+This project is licensed under the MIT License - see the [LICENSE.text](LICENSE.text) file for details
+Copyright (c) 2019
