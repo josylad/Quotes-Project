@@ -12,7 +12,7 @@ export class QuoteCountPipe implements PipeTransform {
     const secondsInDay = 86400; //60 seconds * 60 Minutes in an hour * 24 hours in a day
     var dateDifferenceSeconds = dateDifference*0.001; //converts  miliseconds to seconds
     var dateCounter = Math.floor(dateDifferenceSeconds/secondsInDay);
-    
+
 
     if (dateCounter >= 1 && value < todayWithNoTime){
       return dateCounter;
