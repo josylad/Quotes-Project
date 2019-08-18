@@ -37,11 +37,17 @@ addNewQuotes(Quotes){
       }
     }
   }
-// votingIncrease(index){
-//   this.myquotes[index].upvote = this.myquotes.upvote + 1;
-// }
-// quoteHighlight(index){
-//   this.myquotes[index].upvote = appHighlight [highlightColor]=`"yellow"`
+
+  voteIncrement(index){
+    this.myquotes[index].upvote = this.myquotes[index].upvote += 1;
+  }
+voteDecrement(index){
+  this.myquotes[index].downvote = this.myquotes[index].downvote += 1;
+}
+
+// sortingvote(){
+//   // voteIncrement(index).sort((a,b) => b - a);
+//   let maxValueOfY = Math.max(...this.myquotes.upvote.map(o => o.y), 0);
 // }
 
 
