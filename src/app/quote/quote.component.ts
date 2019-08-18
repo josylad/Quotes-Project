@@ -37,6 +37,12 @@ addNewQuotes(Quotes){
       }
     }
   }
+// votingIncrease(index){
+//   this.myquotes[index].upvote = this.myquotes.upvote + 1;
+// }
+// quoteHighlight(index){
+//   this.myquotes[index].upvote = appHighlight [highlightColor]=`"yellow"`
+// }
 
 
   constructor() { }
